@@ -1,0 +1,11 @@
+{
+    "name": "Michelle's Extension",
+    "version": "1.0.0",
+    "description": "My Chrome Extension Test",
+    "manifest_version": 3,
+    "author": "Michelle Taing",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Michelle's Extension"
+    }
+}
