@@ -5,26 +5,32 @@
     <meta charset="utf-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap');
         body {
             padding: 20px;
             width: 500px;
+            font-family: 'Inter', sans-serif;
         }
         h1 {
             font-size: 32px;
+            font-weight: 700;
+        }
+        .btn-custom {
+            background-color: #A7C796;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Searchify!</h1>
+    <h1>sift.</h1>
     <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Enter text</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Find more resources about..."></textarea>
+        <label for="exampleFormControlInput1" class="form-label">Find more resources about...</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Information here..."></textarea>
     </div>
+    <button type="button" class="mb-3 btn btn-custom rounded-pill" id="searchButton">Search</button>
     <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Here's what we found:</label>
+        <div id="searchResults">
+        </div>
     </div>
-    <button type="button" class="btn btn-primary" id="searchButton">Search</button>
-
 </body>
 <script src="index.js"></script>
 </html>
