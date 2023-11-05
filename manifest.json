@@ -1,11 +1,17 @@
 {
-    "name": "Michelle's Extension",
+    "name": "sift.",
     "version": "1.0.0",
-    "description": "My Chrome Extension Test",
+    "description": "Search with sift.",
     "manifest_version": 3,
     "author": "Michelle Taing",
+    "permissions": [
+        "contextMenus"
+    ],
     "action":{
         "default_popup": "index.html",
         "default_title": "Michelle's Extension"
+    },
+    "background": {
+        "service_worker": "background.js"
     }
 }
