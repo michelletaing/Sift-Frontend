@@ -1,6 +1,22 @@
 // Update the API endpoint to your Node.js server
 const serverUrl = 'http://localhost:3000';
 
+document.addEventListener("DOMContentLoaded", function () {
+    const searchButton = document.getElementById("searchButton");
+    const searchResults = document.getElementById("searchResults");
+    const textarea = document.getElementById("exampleFormControlTextarea1");
+  
+    // Listen for messages from the context menu click
+    chrome.runtime.onMessage.addListener(function (message) {
+      if (message.action === "showPopup") {
+        const selectedText = message.selectedText;
+  
+        // Populate the textarea with the selected text
+        textarea.value = selectedText;
+      }
+    });
+});
+
 document.getElementById('searchButton').addEventListener('click', async () => {
     const query = document.getElementById('exampleFormControlTextarea1').value;
   
