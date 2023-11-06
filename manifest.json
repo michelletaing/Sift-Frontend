@@ -5,7 +5,9 @@
     "manifest_version": 3,
     "author": "Michelle Taing",
     "permissions": [
-        "contextMenus"
+        "contextMenus",
+        "activeTab",
+        "scripting"
     ],
     "action":{
         "default_popup": "index.html",
